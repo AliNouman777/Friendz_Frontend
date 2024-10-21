@@ -2,7 +2,7 @@ import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 // const BaseURL =`http://localhost:4001`
-const BaseURL = `https://social-media-app-project.onrender.com`
+const BaseURL = `https://friendz-backend.onrender.com`
 
 export const Allpost = createAsyncThunk(
   "AllPost",
