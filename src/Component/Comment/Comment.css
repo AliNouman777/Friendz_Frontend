@@ -1,0 +1,116 @@
+.CommentPcon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: invert(0) !important;
+}
+
+.CommentBox{
+    overflow: scroll;
+    border: 1px solid sliver;
+    background-color: white;
+    width: 50vh;
+    max-height: 50vh;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.CommentBox::-webkit-scrollbar{
+    display: none;
+}
+
+.closebtn{
+    position: relative;
+}
+
+.closebtn >i{
+    position: absolute;
+    right: 0;
+    margin: 0.2rem;
+    font-size: large;
+    cursor: pointer;
+}
+
+.CommentCcon >input{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+}
+
+.CommentCcon >button{
+    display: flex;
+    padding: 0.5rem;
+    border: 1px solid black;
+    color:white;
+    border-radius: 0.5rem;
+    margin:  1rem auto;
+    transition: all 0.5s;
+    font-weight: bolder;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.CommentCcon>button:hover{
+    transform: scale(1.1);
+}
+
+.CommentCcon>button:active{
+    background: none;
+}
+.CommentCcon>button:disabled{
+    color: grey;
+    border: 1px solid grey;
+    background: none;
+    cursor: not-allowed
+}
+
+.childComment >p{
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.commentby {
+    display: flex;
+}
+
+.commentby >img{
+    width: 35px ;
+    height: 35px;
+    border-radius: 50%;
+    
+}
+
+.commentby >a{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    margin: auto 0.5rem;
+}
+
+
+.trash{
+    position: absolute;
+    z-index: 100;
+    right: 1rem;
+    font-size: large;
+    color: red;
+    cursor: pointer;
+    margin-top: 1.1rem;
+}

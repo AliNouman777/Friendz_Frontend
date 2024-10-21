@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+     background: linear-gradient(to right, pink, rgba(0, 0, 255, 1), rgba(5, 225, 5, 1));
+     position: sticky;
+     top: 0;
+     z-index: 1;
+}
+
+img{
+    width: 4rem;
+    height: 5rem;
+    filter: invert(1);
+}
+
+.innerheader{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-solid {
+    color: rgb(186, 187, 216);
+}
+
+.innerheader >a{
+    font-size: x-large;
+    text-decoration: none;
+    color: rgb(67, 10, 238) !important;
+    transition: all 0.5s;
+}
+
+.innerheader >a :active{
+    color: rgb(6, 0, 20);
+}
+
+.innerheader >a:hover{
+    transform: scale(1.2) ;
+}

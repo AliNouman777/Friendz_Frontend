@@ -1,0 +1,288 @@
+.Home {
+  display: flex;
+  flex-wrap: no-wrap;
+  width: 100%;
+  height: 85vh;
+}
+
+.Home::-webkit-scrollbar {
+  display: none;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem auto;
+  margin-top: 2rem;
+  white-space: nowrap;
+}
+
+aside::-webkit-scrollbar{
+  display: none;
+}
+
+#postimg {
+  display: flex;
+}
+
+#likeslength {
+  color: rgba(0, 0, 0, 0.438);
+}
+
+#alluser{
+  
+  right: 2%;
+}
+
+.Home > main {
+ background-color:rgba(0 , 0, 0, 0.2);
+  width: 100%;
+  max-width: 75%;
+  overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.Span {
+  position: absolute;
+  right: 6%;
+  margin: auto;
+}
+
+.usercon {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  background-color: white;
+  margin: 0.8rem 0rem;
+  margin-left: 0.5rem;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 0.3rem;
+  justify-content: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+  overflow: scroll;
+}
+
+.usercon::-webkit-scrollbar {
+  display: none;
+}
+
+.usercon:hover {
+  transform: scale(1.03);
+}
+
+.usercon > img {
+  width: 35px; /* or any other value */
+  height: 35px; /* or any other value */
+  border-radius: 50%;
+  filter: invert(0) !important;
+  object-fit: cover;
+  margin: auto;
+}
+
+.usercon > h5 {
+  margin: auto;
+}
+
+.postcon {
+  width: 50%;
+  max-width: 800px;
+  height: auto;
+  text-align: center;
+  margin: 2rem auto;
+  color: wheat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 1px rgba(81, 59, 59, 0.8);
+}
+
+.postuser {
+  display: flex;
+  padding: 0.5rem;
+
+  width: 100%;
+}
+
+.postuser > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: invert(0) !important;
+}
+
+.postuser > a {
+  margin: auto 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.post > img {
+  width: 90%;
+  max-width: 800px;
+  max-height: 1100px;
+  height: 1%;
+  margin: 0rem auto;
+  background-color: white;
+  filter: invert(0) !important;
+}
+
+.heart {
+  color: #000;
+  font-size: 2rem;
+}
+
+.likes {
+  color: black;
+  margin: 0.83rem 2rem;
+  cursor: pointer;
+}
+
+.posttext {
+  display: flex;
+}
+
+.post {
+  margin-top: 1rem;
+}
+
+.comment {
+  font-size: 2rem;
+  color: black;
+  margin-top: 1.9rem;
+  cursor: pointer;
+}
+
+.caption {
+  color: black;
+  font-size: small;
+  width: 90%;
+  max-width: 800px;
+  margin: 0rem auto;
+  text-align: left;
+  display: flex;
+  overflow: scroll;
+  max-height: 2rem;
+}
+
+.caption::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+  aside{
+    overflow: auto;
+  }
+
+  .postcon {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .Span {
+    font-size: x-small !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #alluser{
+    right: inherit;
+    top: 8%;
+  }
+  .usercon >img{
+    display: block;
+  }
+}
+@media  screen and (max-width: 420px) {
+.Home >aside{
+  width: 5rem;
+  overflow-x: auto;
+}
+
+  .postcon {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .Span  >h1{
+   
+    display: none;
+  }
+  .Home > main {
+    max-width: 100%;
+  }
+
+  .Home >aside{
+    display: none;
+  }
+
+  .usercon {
+    max-width: 100%;
+    font-size: small;
+    overflow: hidden !important;
+    margin: 0.4rem 0rem;
+  }
+
+  .usercon > img {
+    width: 35px; 
+    height: 35px;
+    border-radius: 50%;
+    filter: invert(0) !important;
+    object-fit: cover;
+    margin: auto;
+  }
+
+  .usercon > h5 {
+    margin: auto;
+  }
+
+  .postcon {
+    width: 95%;
+  }
+
+  .post > img {
+    width: 98%;
+    max-width: 800px;
+    margin: 0rem 2px;
+  }
+
+  #likeslength {
+    font-size: small;
+    margin: 0.3rem 0rem;
+  }
+
+  .heart {
+    color: #000;
+    font-size: 1.3rem;
+  }
+
+  .likes {
+    color: black;
+    margin: 0.83rem 2rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  .comment {
+    margin-top: 2.6rem !important;
+    font-size: 1.3rem !important;
+  }
+
+  .posttext {
+    display: flex;
+  }
+
+  .post {
+    margin-top: 1rem;
+  }
+}

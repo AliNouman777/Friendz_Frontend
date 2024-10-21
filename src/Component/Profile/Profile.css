@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap");
+
+.Profile {
+  min-width: 100%;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+.profilesection {
+  text-align: center;
+}
+.profilesection > img {
+  width: 12rem;
+  height: 12rem;
+  filter: invert(0);
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.profiledetail {
+  line-height: 180%;
+}
+
+.profiledata {
+  margin: 1rem;
+}
+
+.profiledata > button {
+  padding: 0.6rem;
+  font-size: large;
+  margin: 1rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 1rem;
+  font-weight: 700;
+  background-color: rgba(0, 0, 255, 0.386);
+  color: navy;
+  border: none;
+  box-shadow: 0px 0px 10px 1px rgba(47, 0, 234, 0.553);
+}
+.profiledata :hover {
+  transition: all 0.3s;
+  box-shadow: none;
+}
+
+#secondary{
+  color: rgba(147, 125, 125, 0.786) !important;
+}
+
+.close{
+  position: absolute;
+  right:1%;
+  font-size: large;
+}
+
+.profiledata :active {
+  color: grey;
+}
+
+.profiledetail > span {
+  font-weight: bold;
+}
+
+.postSection {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.postSection p {
+  color: navy;
+  text-align: center;
+}
+
+
+.follower {
+    position: fixed;
+    min-width: 20rem;
+    min-height: 10rem;
+    background-color: rgba(255, 192, 203, 0.689);
+    z-index: 1;
+    top: 55%;
+    left: 50%;
+    text-align: center;
+    padding: 0.5rem;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+
+}
+.follower >a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid navy;
+}
+
+
+.heart {
+  color: red;
+  cursor: pointer;
+}
+
+.proheart {
+  margin: 0rem 2rem;
+}
+
+.sectionpost {
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.475);
+  margin: 1rem auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  width: 26rem;
+  flex-wrap: wrap;
+ }
+
+.sectionpost img {
+  filter: invert(0);
+  width: 20rem;
+  height: 20rem;
+  object-fit: contain;
+  margin: auto;
+}
+
+.profilepostdata{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.profilepostdata >div{
+  margin-right: 5rem;
+}
+
+#deletepost {
+  display: inline;
+  margin-left: 80%;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  font-size: x-large;
+  margin-top: 1.5rem;
+}
+
+#deletepost:disabled{
+  color: grey;
+  cursor: not-allowed;
+}
+
+.secondary {
+  text-align: left !important;
+  color: black !important;
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .profilesection > img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .sectionpost {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .sectionpost img {
+    width: 100%;
+  }
+
+  #deletepost {
+    margin-left: 40%;
+  }
+}
