@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // const BaseURL =`http://localhost:4001`
-const BaseURL = `https://friendz-backend.onrender.com`
+const BaseURL = `https://backend-todo-app-pby6.onrender.com`
 
 
 export const LoginCall = createAsyncThunk("Login", async ({ email, password }, { rejectWithValue }) => {
